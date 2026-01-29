@@ -40,5 +40,5 @@ done
 echo "Starting parallel download of ${#urls[@]} files..."
 printf "%s\n" "${urls[@]}" | xargs -n 1 -P "${#urls[@]}" wget -L --content-disposition -nv --show-progress -P "${download_dir}"
 
-num_files=$(ls -1 "${download_dir}/db.7z."* 2>/dev/null | wc -l)
+num_files=$(ls -1 "${download_dir}/ChainDB.7z."* 2>/dev/null | wc -l)
 echo "Download complete. Total parts downloaded: ${num_files}."

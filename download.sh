@@ -23,7 +23,7 @@ urls=()
 part_number=1
 while true; do
     part=$(printf "%03d" $part_number)
-    asset_name="db.7z.${part}"
+    asset_name="ChainDB.7z.${part}"
     
     download_url=$(curl -s "https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/releases/latest" | grep -oP '"browser_download_url": "\K[^"]+' | grep "$asset_name")
 

@@ -3,7 +3,7 @@
 1. Download all `db.7z.00*` from the [latest release](https://github.com/Kidpower13/nkn-mainnet-db/releases) or use the batch download script:
 
    ```bash
-   wget https://github.com/Kidpower13/p3d-mainnet-db/raw/main/download.sh && sudo chmod 777 download.sh && ./download.sh
+   wget https://github.com/Kidpower13/nkn-mainnet-db/raw/main/download.sh && sudo chmod 777 download.sh && ./download.sh
    ```
 
    The downloaded files will be stored in the `./downloads` directory.
